@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+// import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/ and TailwindCSS configuration for more info
 export default defineConfig({
   plugins: [
@@ -9,6 +9,6 @@ export default defineConfig({
         plugins: [['babel-plugin-react-compiler']],
       },
     }),
-    tailwindcss(),
+    // tailwindcss(),
   ], 
 })
