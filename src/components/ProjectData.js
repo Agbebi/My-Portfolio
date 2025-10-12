@@ -42,7 +42,7 @@
         "image": "path/to/image5.jpg",
         "link": "https://picsum.photos/300/200?random=5",
         "skills_used": ["Javascript", "React", "HTML", "CSS"],
-        "value": ""
+        "value": "https://my-portfolio-zeta-olive-62.vercel.app/"
     },
 ]
 
