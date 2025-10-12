@@ -3,8 +3,14 @@ import Skills from './Skills';
 
 const Projects = (props) => {
     const projectList = [...props.skills];
+
+     const fadeInStyle = {
+        animation: 'fadeIn 1s ease',
+        animationTimeline: 'view()'
+    };
+
     return (
-        <div className="project-card flex flex-col justify-stretch items-center border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div style={fadeInStyle} className="project-card flex flex-col justify-stretch items-center border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className='project-image flex mb-3 w-full'>
                 <img src={props.img} alt="Project 1" className='project-img object-cover grow w-full h-[100%]' />
             </div>

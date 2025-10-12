@@ -3,3 +3,32 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%); /* Scrolls content to the left */
+  }
+}

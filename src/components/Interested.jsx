@@ -1,8 +1,14 @@
 import React from 'react';
 
 const Interested = () => {
+
+     const fadeInStyle = {
+        animation: 'fadeIn 1s ease-in',
+        animationTimeline: 'view()'
+    };
     return (
-        <div className='flex w-full justify-center items-center md:gap-10 gap-3 p-6 text-sm'>
+        <div style={
+                        fadeInStyle} className='flex w-full justify-center items-center md:gap-10 gap-3 p-6 text-sm'>
             <div className="min-h-[30vh] p-5 flex flex-col justify-center items-start max-w-md rounded">
                 <h2 className='text-lg text-gray-800 font-semibold'>Interested for a project?</h2>
                 <p className='text-gray-600 text-xs py-5'>If you're looking for a dedicated and skilled developer to bring your project to life, I’d love to collaborate. Reach out to discuss your vision. I’m ready to help turn it into reality.</p>

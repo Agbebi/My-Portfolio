@@ -1,8 +1,14 @@
 import React from 'react';
 
 const GetAcross = (props) => {
+
+     const fadeInStyle = {
+        animation: 'fadeIn 1s ease',
+        animationTimeline: 'view()'
+    };
+
     return (
-        <div className='p-2'>
+        <div style={fadeInStyle} className='p-2'>
             <h2 className='font-semibold mb-2'>{props.title}</h2>
             <p className='text-sm text-gray-700'>{props.description}</p>
             <div className='text-orange-500 flex items-center gap-2 mt-2'>

@@ -5,10 +5,10 @@ function NavBar() {
 
     return (
         <nav className="navbar w-full sticky top-0 z-10">
-            <div className="nav-wrapper flex justify-center items-center px-10 bg-white text-black h-12 shadow-md">
+            <div className="nav-wrapper flex justify-center items-center px-10 bg-white text-gray-800 h-12 shadow-md">
                 {<ul id="nav" className="flex direction-row space-x-7 items-center">
                         {menuItems.map((item, index) => (
-                            <li key={index} className="nav-item text-sm font-semibold">
+                            <li key={index} className="nav-item text-sm font-base">
                                 <a href={`${item.toLowerCase()}`} className=" hover:border-b">{item}</a>
                             </li>
                         ))}
