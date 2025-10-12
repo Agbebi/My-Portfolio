@@ -45,20 +45,22 @@ const Contact = () => {
                     </form>
                 </div>
                 <div style={fadeInStyle} className='flex flex-col justify-start gap-5 p-3'>
-                    <GetAcross title="Call Us"
+                    <GetAcross title="Call Me"
                         description="Hey, just wanted to check in and see how you're doing today. Let me know if you need anything or just feel like chatting!"
                         icon="fa-solid fa-phone"
-                        input="+234 70 4277 5318" />
+                        input="+234 70 4277 5318"
+                        link="tel: +234 70 4277 5318" />
 
-                    <GetAcross title="Visit Us"
+                    <GetAcross title="Find Me"
                         description="Looking to build something amazing online? Find me here to explore how my web development skills can bring your digital ideas to life."
                         icon="fa-solid fa-map-pin"
                         input="Behind MGS, Otun Ekiti. Nigeria."
                     />
-                    <GetAcross title="Chat me"
+                    <GetAcross title="Chat Me"
                         description="You can start a conversation with me directly from here. Just send a message using the form above and I'll get back to you as soon as possible."
                         icon="fa-solid fa-comments"
                         input="Start Chat"
+                        link="https://wa.me/2347042775318?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services"
                     />
                 </div>
             </div>

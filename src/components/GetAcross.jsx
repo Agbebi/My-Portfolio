@@ -15,7 +15,7 @@ const GetAcross = (props) => {
                 <div className='bg-gray-300 p-1 rounded-full'>
                     <i className={props.icon}></i>
                 </div>
-                <a className='hover:underline cursor-pointer text-sm'>{props.input}</a>
+                <a href={props.link} className='hover:underline cursor-pointer text-sm'>{props.input}</a>
             </div>
         </div>
     );
