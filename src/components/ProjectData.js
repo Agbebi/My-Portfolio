@@ -1,12 +1,12 @@
- const projectdata = [
+const projectdata = [
     {
         "id": 1,
-        "title": "Carousel Design",
-        "description": "This is a description of project one.",
-        "image": "path/to/image1.jpg",
-        "link": "https://picsum.photos/300/200?random=1",
-        "skills_used": ["Javascript", "HTML", "CSS"],
-        "value": ""
+        "title": "Portfolio Website",
+        "description": "This is a description of project five.",
+        "image": "path/to/image5.jpg",
+        "link": "https://picsum.photos/300/200?random=5",
+        "skills_used": ["Javascript", "React", "HTML", "CSS"],
+        "value": "https://my-portfolio-zeta-olive-62.vercel.app/"
     },
     {
         "id": 2,
@@ -23,17 +23,17 @@
         "description": "This is a description of project four.",
         "image": "path/to/image4.jpg",
         "link": "https://picsum.photos/300/200?random=4",
-        "skills_used": [ "Javascript", "Node.Js", "Express", "HTML", "CSS"],
+        "skills_used": ["Javascript", "Node.Js", "Express", "HTML", "CSS"],
         "value": "https://arinyedrivingschool.com.ng"
     },
     {
         "id": 4,
-        "title": "Portfolio Website",
-        "description": "This is a description of project five.",
-        "image": "path/to/image5.jpg",
-        "link": "https://picsum.photos/300/200?random=5",
-        "skills_used": ["Javascript", "React", "HTML", "CSS"],
-        "value": "https://my-portfolio-zeta-olive-62.vercel.app/"
+        "title": "Carousel Design",
+        "description": "This is a description of project one.",
+        "image": "path/to/image1.jpg",
+        "link": "https://picsum.photos/300/200?random=1",
+        "skills_used": ["Javascript", "HTML", "CSS"],
+        "value": "https://agbebi.github.io/Carousel-Design/"
     },
     {
         "id": 5,
