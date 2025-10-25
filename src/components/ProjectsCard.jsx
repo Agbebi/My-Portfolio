@@ -1,16 +1,18 @@
 import React from 'react';
 import Skills from './Skills';
+import { motion } from "framer-motion";
+import { FadeUp } from "../utility/animation";
 
 const Projects = (props) => {
     const projectList = [...props.skills];
 
-     const fadeInStyle = {
-        animation: 'fadeIn 1s ease',
-        animationTimeline: 'view()'
-    };
-
     return (
-        <div style={fadeInStyle} className="project-card flex flex-col justify-stretch items-center border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300">
+        <motion.div 
+            variants={FadeUp(0.3)}
+            initial="hidden"
+            whileInView="visible"
+        
+        className="project-card flex flex-col justify-stretch items-center border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className='project-image flex mb-3 w-full'>
                 <img src={props.img} alt="Project 1" className='project-img object-cover grow w-full h-[100%]' />
             </div>
@@ -22,7 +24,7 @@ const Projects = (props) => {
                 </div>
                 <a href={props.value} rel="noopener noreferrer" className=' cursor-pointer ml-3 underline text-gray-500 self-start justify-self-end text-sm text-gray-700 hover:underline hover:text-orange-500'>View Project</a>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
