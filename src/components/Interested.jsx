@@ -10,7 +10,7 @@ const Interested = () => {
     return (
         <div className='flex w-full justify-center items-center md:gap-10 gap-3 p-6 text-sm'>
             <motion.div
-                variants={FadeRight(0.4)}
+                variants={FadeUp(0.4)}
                 initial="hidden"
                 whileInView="visible"
              className="min-h-[30vh] p-5 flex flex-col justify-center items-start max-w-md rounded">
@@ -24,7 +24,7 @@ const Interested = () => {
             </motion.div>
 
             <motion.div 
-                variants={FadeLeft(0.4)}
+                variants={FadeUp(0.8)}
                  initial="hidden"
                 whileInView="visible"
             className="bg-gray-100 min-h-[30vh] max-h-[100px] flex flex-col justify-center items-start min-w-[150px] max-w-md rounded shadow">
