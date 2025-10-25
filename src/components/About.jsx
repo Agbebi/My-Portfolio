@@ -24,13 +24,13 @@ function About() {
 
             <div className="background-text p-10 text-sm max-w-2xl text-left min-h-[30vh] ">
                 <motion.h3
-                    variants={FadeLeft(0.3)}
+                    variants={FadeUp(0.3)}
                     initial="hidden"
                     whileInView="visible"
                     className="text-xl font-semibold mb-4 text-left text-gray-800">Background
                 </motion.h3>
                 <motion.p
-                    variants={FadeLeft(0.6)}
+                    variants={FadeUp(0.6)}
                     initial="hidden"
                     whileInView="visible"
                     className=" mb-4 text-gray-600">
@@ -41,7 +41,7 @@ function About() {
 
                 <motion.p
                     className=" mb-4 r text-gray-600"
-                    variants={FadeLeft(0.9)}
+                    variants={FadeUp(0.9)}
                     initial="hidden"
                     whileInView="visible"
                 >
