@@ -13,16 +13,16 @@ function App() {
 
 
   return (
-    <main className='app-container'>
+    <main className='app-container overflow-x-hidden'>
       <NavBar />
-    <Routes>
-      <Route path='/' element={<Hero /> }/>
-      <Route path='/home' element={<Hero /> }/>
-      <Route path='/about' element={<About /> }/>
-      <Route path='/projects' element={<ProjectSection /> }/>
-      <Route path='/contact' element={<Contact /> }/>
-    </Routes>
-    <Footer />
+      <Routes>
+        <Route path='/' element={<Hero />} />
+        <Route path='/home' element={<Hero />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<ProjectSection />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      <Footer />
     </main>
   )
 }

@@ -15,7 +15,7 @@ function About() {
             <motion.div
                 initial={{ filter: "blur(20px)", scale: 0.9 }}
                 animate={{ filter: "none", scale: 1 }}
-                transition={{ duration: 2.5, delay: 0.2 }}
+                transition={{ duration: 1.5, delay: 0.2 }}
                 className="bg-[url(https://picsum.photos/1280/800?random=3)] bg-no-repeat bg-cover before:inset before:absolute before:content-'' before:opacity-50 before:bg-black before:w-[100%] h-[50vh] before:h-[50vh] text-white  flex justify-center items-center w-full">
                 <h2 className="text-7xl z-4 font-semibold mb-4">
                     About Me
