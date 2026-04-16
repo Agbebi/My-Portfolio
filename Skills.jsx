@@ -1,23 +1,39 @@
-// Assuming you have imported motion from 'framer-motion' or similar library
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import { FadeUp } from '../utility/animation';
+import { useLocation } from "react-router-dom";
 
-const Skills = () => {
-    const location = useLocation();
-    const disableAnimations = location.pathname.includes('/projects');
+const Skills = (props) => {
+
+const location = useLocation()
+const currentLocation = location.pathname
+const isProjectsSection = currentLocation.includes("/projects")
+
+// console.log(currentLocation);
+
+    if (isProjectsSection) {
+        return (
+            <div className='skills text-sm flex flex-wrap justify-center gap-2'>
+                {props.items.map((item, index) => (
+                    <span key={index} className="skill-badge text-xs bg-gray-300 p-2 rounded-lg">{item}</span>
+                ))}
+            </div>
+        );
+    }
 
     return (
-        <div>
-            {disableAnimations ? (
-                <div>Your Skills content without animations</div>
-            ) : (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                    <h2>Your Skills</h2>
-                    <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}>Animated Span</motion.span>
-                </motion.div>
-            )}
-        </div>
+        <motion.div
+            variants={FadeUp(1.2)}
+            initial="hidden"
+            whileInView="visible"
+            className='skills text-sm flex flex-wrap justify-center gap-2'>
+            {props.items.map((item, index) => (
+                <motion.span
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.1 }}
+                    key={index} className="skill-badge text-xs bg-gray-300 p-2 rounded-lg">{item}</motion.span>
+            ))}
+        </motion.div>
     );
 };
 
