@@ -13,9 +13,9 @@ const isProjectsSection = currentLocation.includes("/projects")
 
     if (isProjectsSection) {
         return (
-            <div className='skills text-sm flex flex-wrap justify-center gap-2'>
+            <div className='skills text-sm flex flex-wrap justify-start gap-2'>
                 {props.items.map((item, index) => (
-                    <span key={index} className="skill-badge text-xs bg-gray-300 p-2 rounded-lg">{item}</span>
+                    <span key={index} className="skill-badge text-[11px] bg-gray-300 p-1 px-2 rounded-4xl">{item}</span>
                 ))}
             </div>
         );

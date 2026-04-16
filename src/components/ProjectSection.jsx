@@ -24,7 +24,7 @@ const ProjectSection = () => {
                     direction="top"
                     className='text-gray-800 italic mb-10 text-xs text-center w-[80vw] flex item-center justify-center'
                 />
-                <div className="p-3 projects-grid max-w-[1000px] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                <div className={`p-3 projects-grid max-w-[1200px] grid grid-cols-1 md:grid-cols-3 ${projectData.length < 5 ? 'lg:grid-cols-'+ projectData.length : 'lg:grid-cols-5'} gap-4`}>
                     {
                         projectData.map((project) => (
                             <ProjectCard key={project.id} title={project.title} value={project.value} description={project.description} img={project.link} skills={project.skills_used} />
