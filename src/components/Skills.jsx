@@ -7,16 +7,25 @@ const Skills = (props) => {
 
 const location = useLocation()
 const currentLocation = location.pathname
+const isProjectsSection = currentLocation.includes("/projects")
 
 // console.log(currentLocation);
 
+    if (isProjectsSection) {
+        return (
+            <div className='skills text-sm flex flex-wrap justify-center gap-2'>
+                {props.items.map((item, index) => (
+                    <span key={index} className="skill-badge text-xs bg-gray-300 p-2 rounded-lg">{item}</span>
+                ))}
+            </div>
+        );
+    }
 
     return (
         <motion.div
-            variants={currentLocation === "/projects" ? FadeUp(0.3) : FadeUp(1.2)}
+            variants={FadeUp(1.2)}
             initial="hidden"
             whileInView="visible"
-
             className='skills text-sm flex flex-wrap justify-center gap-2'>
             {props.items.map((item, index) => (
                 <motion.span
@@ -29,6 +38,3 @@ const currentLocation = location.pathname
 };
 
 export default Skills;
-
-
-
