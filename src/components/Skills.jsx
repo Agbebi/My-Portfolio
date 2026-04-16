@@ -15,7 +15,7 @@ const isProjectsSection = currentLocation.includes("/projects")
         return (
             <div className='skills text-sm flex flex-wrap justify-start gap-2'>
                 {props.items.map((item, index) => (
-                    <span key={index} className="skill-badge text-[11px] bg-gray-300 p-1 px-2 rounded-4xl">{item}</span>
+                    <span key={index} className="skill-badge text-[11px] text-gray-700 bg-gray-300 p-1 px-2 rounded-4xl">{item}</span>
                 ))}
             </div>
         );
